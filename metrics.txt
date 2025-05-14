@@ -1,0 +1,9 @@
+Overall Accuracy: 0.2131
+
+Class 0 - Precision: 0.1429, Recall: 0.1667, Accuracy: 0.1667
+Class 1 - Precision: 0.0000, Recall: 0.0000, Accuracy: 0.0000
+Class 2 - Precision: 0.5000, Recall: 0.2000, Accuracy: 0.2000
+Class 3 - Precision: 0.0000, Recall: 0.0000, Accuracy: 0.0000
+Class 4 - Precision: 0.0952, Recall: 0.2222, Accuracy: 0.2222
+Class 5 - Precision: 0.0000, Recall: 0.0000, Accuracy: 0.0000
+Class 6 - Precision: 0.4000, Recall: 0.8000, Accuracy: 0.8000
