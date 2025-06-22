@@ -112,14 +112,9 @@ pip install numpy matplotlib pillow
 
 ---
 
-## 🙋‍♂️ Author
+## 🙋‍♂️ Note
 
 Developed as part of a classical DIP course project.  
-📧 Contact: [https://www.linkedin.com/in/m-abdullah-butt-01-01-abc/]  
-
 
 ---
 
-## 📜 License
-
-This project is open-source under the MIT License.
