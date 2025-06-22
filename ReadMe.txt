@@ -1,101 +1,125 @@
-🚦 Traffic Sign Classification Using Classical Digital Image Processing Techniques
-This project implements a complete rule-based traffic sign classification system using only classical digital image processing techniques. Unlike modern machine learning approaches, all image analysis tasks are performed using manual operations with NumPy and basic Python libraries.
+# 🚦 Traffic Sign Classification Using Classical Digital Image Processing Techniques
 
-📌 Objective
-To develop an end-to-end traffic sign classifier capable of identifying signs based on their color, shape, and geometric features using traditional image processing techniques such as:
+This project implements a complete rule-based traffic sign classification system using **classical digital image processing techniques only**. Unlike modern deep learning-based approaches, all tasks here are performed manually using **NumPy** and core Python libraries.
 
-Filtering
+---
 
-Segmentation
+## 📌 Objective
 
-Feature extraction
+To develop an **end-to-end traffic sign classifier** that identifies signs using:
 
-Rule-based classification
+- 🎨 **Color-based analysis**
+- 🔷 **Shape and geometric features**
+- 🔍 **Hand-crafted rule-based classification**
 
-📁 Dataset
-Download Link:
-📥 Google Drive Download: https://drive.google.com/file/d/1HXH-6fVv3qplhXTOGJnBen2Tc_HRpGnI/view
+---
 
-Classes Used:
-Label	Description	Category
-0	Speed Limit 20	Prohibitory
-1	Speed Limit 30	Prohibitory
-2	Speed Limit 50	Prohibitory
-3	Speed Limit 60	Prohibitory
-4	Speed Limit 70	Prohibitory
-5	Speed Limit 80	Prohibitory
-6	Restriction Ends 80	Other
-7	Speed Limit 100	Prohibitory
+## 📁 Dataset
 
-⚙️ Features Implemented
-1. Preprocessing
-Mean Filter
+- 📥 **[Download via Google Drive](https://drive.google.com/file/d/1HXH-6fVv3qplhXTOGJnBen2Tc_HRpGnI/view)**
 
-Gaussian Filter
+### 🔢 Classes Used
 
-Median Filter
+| Label | Description            | Category     |
+|-------|------------------------|--------------|
+| 0     | Speed Limit 20         | Prohibitory  |
+| 1     | Speed Limit 30         | Prohibitory  |
+| 2     | Speed Limit 50         | Prohibitory  |
+| 3     | Speed Limit 60         | Prohibitory  |
+| 4     | Speed Limit 70         | Prohibitory  |
+| 5     | Speed Limit 80         | Prohibitory  |
+| 6     | Restriction Ends 80    | Other        |
+| 7     | Speed Limit 100        | Prohibitory  |
 
-Adaptive Median Filter
+---
 
-Unsharp Masking & High-Boost Filtering
+## ⚙️ Features Implemented
 
-2. Color-Based Segmentation
-Manual conversion to HSV
+### 1️⃣ Preprocessing
 
-Mask creation for red and blue signs
+- ✅ Mean Filter  
+- ✅ Gaussian Filter  
+- ✅ Median Filter  
+- ✅ Adaptive Median Filter  
+- ✅ Unsharp Masking & High-Boost Filtering
 
-Morphological operations
+### 2️⃣ Color-Based Segmentation
 
-Hole filling and noise removal
+- ✅ Manual RGB → HSV conversion  
+- ✅ Red & Blue color masking  
+- ✅ Morphological Operations  
+- ✅ Hole Filling and Noise Removal
 
-3. Edge Detection
-Canny Edge Detection (manual implementation)
+### 3️⃣ Edge Detection
 
-Gradient Computation
+- ✅ Manual Canny Edge Detection  
+  - Gradient Computation  
+  - Non-Maximum Suppression  
+  - Hysteresis Thresholding
 
-Non-Maximum Suppression
+### 4️⃣ Geometric Normalization
 
-Hysteresis Thresholding
+- ✅ Rotation Correction  
+- ✅ Rescaling to Uniform Size  
+- ✅ Optional Perspective Transform
 
-4. Geometric Normalization
-Rotation to upright orientation
+### 5️⃣ Feature Extraction
 
-Scaling to fixed size
+- ✅ Harris Corner Count  
+- ✅ Circularity  
+- ✅ Aspect Ratio  
+- ✅ Extent (Region Area / Bounding Box Area)  
+- ✅ Average Hue
 
-Optional perspective transform (all in NumPy)
+### 6️⃣ Rule-Based Classification
 
-5. Feature Extraction
-Harris Corner Count
+- ✅ If-Else Based Rule Set  
+- ✅ Shape & Color Logic  
+- ✅ Disambiguation of Similar Signs
 
-Circularity
+---
 
-Aspect Ratio
+## 📈 Evaluation
 
-Extent (region area / bounding box area)
+- 📄 **results.csv** — filename, ground truth, prediction, correctness  
+- 📝 **metrics.txt** — accuracy, precision, recall (overall and per-class)  
+- 📊 **confusion_matrix.png** — visual confusion matrix  
 
-Average Hue
+---
 
-6. Rule-Based Classification
-If-else rules using extracted features
+## ✅ Requirements
 
-Logic based on color and shape
+Install required libraries using pip:
 
-Distinguishes similar-looking sign classes
+```bash
+pip install numpy matplotlib pillow
+```
 
-📈 Evaluation
-The system’s performance is evaluated using the following outputs:
+### 🔧 Core Libraries
 
-results.csv — filename, ground truth, prediction, and correctness
+- Python 3.x
+- NumPy
+- PIL (or OpenCV for image loading)
+- Matplotlib / Seaborn (for visualization)
 
-metrics.txt — accuracy, precision, recall (overall and per-class)
+---
 
-confusion_matrix.png — confusion matrix visualization
+## 🧠 Project Highlights
 
-✅ Requirements
-Python 3.x
+- 🚫 No machine learning or CNNs
+- 🧮 Fully handcrafted digital image processing pipeline
+- 🧪 Educational and interpretable approach to image classification
 
-NumPy
+---
 
-PIL or OpenCV (only for loading images)
+## 🙋‍♂️ Author
 
-Matplotlib / Seaborn (for visualization)
+Developed as part of a classical DIP course project.  
+📧 Contact: [https://www.linkedin.com/in/m-abdullah-butt-01-01-abc/]  
+
+
+---
+
+## 📜 License
+
+This project is open-source under the MIT License.
